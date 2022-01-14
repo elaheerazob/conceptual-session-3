@@ -7,6 +7,51 @@
 body{
     font-family: 'Lato', sans-serif;
 }
+
+header{
+    background-image: url(images/cloud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .container{
     max-width: 1200px;
+    margin: 0 auto;
+}
+.btn{
+
+}
+/* ===========
+======Nav bar ========
+====================*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+.nav-img{
+
+}
+.navbar{
+    display: flex;
+}
+.navbar li {
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    margin-right: 30px;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.left-banner{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
 }
