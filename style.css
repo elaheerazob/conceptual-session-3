@@ -136,3 +136,19 @@ nav{
 .feature span{
     color: rgb(255,1,77);
 }
+/* =============================
+    |||||Gallery section ||||||
+===============================*/
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 25px;
+}
+.thubnel{
+    
+}
+.thubnel img{
+    border: 2px solid rgb(255,1,77);
+    width: 350px;
+    height: 200px;
+}
