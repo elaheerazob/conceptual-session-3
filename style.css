@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /* global css */
 body{
@@ -12,6 +13,9 @@ header{
     background-image: url(images/cloud.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: overlay;
+    
 }
 
 .container{
@@ -19,7 +23,18 @@ header{
     margin: 0 auto;
 }
 .btn{
-
+    border: none;
+    color: #fff;
+    background: rgb(255, 1, 77);
+    padding: 12px 20px;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.btn:hover{
+    color: #FFF;
+    background: #000;
+    border: 1px solid;
 }
 /* ===========
 ======Nav bar ========
@@ -41,10 +56,14 @@ nav{
 }
 .navbar li a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-weight: 700;
     margin-right: 30px;
 }
+
+/* ===========
+======Banner section ========
+====================*/
 .banner{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -54,4 +73,63 @@ nav{
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+}
+.left-banner h1{
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+}
+.left-banner span{
+    color: rgb(255, 1, 77);
+}
+.left-banner p{
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0;
+}
+.right-banner img{
+    
+}
+/* =============================
+    |||||Feature section ||||||
+===============================*/
+.section-title{
+    text-align: center;
+    font-size: 45px;
+    margin: 50px 0;
+}
+.section-title span{
+    color: rgb(255, 1, 77);
+}
+.features{
+
+}
+.feature{
+    width: 300px;
+    height: 250px;
+    background: rgb(161, 150, 150);
+    padding: 20px;
+    border-radius: 2px;
+    
+    
+}
+.feature i{
+    background: rgb(255,1,77);
+    padding: 15px;
+    border-radius: 50%;
+    color: #fff;
+}
+.feature h2{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #fff;
+}
+.feature p{
+    font-size: 18px;
+    margin: 5px 0;
+
+}   
+.feature span{
+    color: rgb(255,1,77);
 }
